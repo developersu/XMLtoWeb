@@ -43,7 +43,8 @@ public class AppGui {
 
     public static void main(String[] args){
         JFrame frame = new JFrame("XMLtoWeb");
-        frame.setContentPane(new AppGui().myPanel);
+        AppGui appGui = new AppGui();
+        frame.setContentPane(appGui.myPanel);
         frame.pack();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setMinimumSize(new Dimension(1024, 480));
